@@ -1,11 +1,13 @@
 # twentyfifteen-invertcolors
 Invert twentyfifteen Wordpress theme colors based on device dark mode settings.
 
-Add the following to twentyfifteen theme functions.php to enqueue the javascript:
+Copy `invert.js` into your twentyfifteen theme directory.
 
-wp_enqueue_script('invertcolors',get_template_directory_uri() . '/invert.js', array(), true);
+Add the following to twentyfifteen theme **functions.php** to enqueue the javascript:
 
-'/invert.js' is the invert javascript code relative to the template directory path.  In this case, it is is wp-content/themes/twentyfifteen/invert.js
+`wp_enqueue_script('invertcolors',get_template_directory_uri() . '/invert.js', array(), true);`
+
+`'/invert.js'` is the invert javascript code relative to the template directory path.  In this case, it is is `wp-content/themes/twentyfifteen/invert.js`
 
 You can test it is working after adding this code by going to your darkmode settings on your browser or smartphone and toggling then going back to your site.
 
